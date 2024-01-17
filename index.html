@@ -76,7 +76,7 @@
     // Starts scanner
 
     function success(result) {
-	scanner.clear();
+	scanner.stop()
 	var audio = new Audio('beep.mp3');
 	audio.play();
         document.getElementById('tnum').value = `${result}`
@@ -120,6 +120,7 @@
               btn.disabled = false
       btn.innerHTML = "Submit"
 	document.getElementById('tnum').value = ''
+		scanner.start()
             /*alert('Success!', response)*/ })
         .catch(error => {
                      btn.disabled = false
