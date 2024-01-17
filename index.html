@@ -76,7 +76,8 @@
     // Starts scanner
 
     function success(result) {
-
+	var audio = new Audio('beep.mp3');
+	audio.play();
         document.getElementById('tnum').value = `${result}`
 	document.getElementById('submit').click();
 
