@@ -18,7 +18,6 @@
     }
     #reader {
         width: 500px;
-	height: 50%;
     }
     #result {
         text-align: center;
@@ -64,7 +63,8 @@
 
     const scanner = new Html5QrcodeScanner('reader', { 
         // Scanner will be initialized in DOM inside element with id of 'reader'
-        qrbox: {
+        aspectRatio: 1.0,
+	    qrbox: {
             width: 400,
             height: 400,
         },  // Sets dimensions of scanning box (set relative to reader element width)
