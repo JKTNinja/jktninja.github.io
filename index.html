@@ -75,9 +75,8 @@
     // Starts scanner
 
     function success(result) {
-
-	document.getElementById('tnum').value = ${result}
-        <!-- document.getElementById('result').innerHTML = ` -->
+		
+        document.getElementById('tnum').innerHTML = "test"
         <!-- <h2>Success!</h2> -->
         <!-- <p><a href="${result}">${result}</a></p> -->
         <!-- `; -->
@@ -96,8 +95,9 @@
         // Prints any errors to the console
     }
 
+</script>
 
-
+<script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwpUluoOrT577SXc9_n2kDQYc7QXDQpBcEQFHXFZmDRFhTWEc8wEcvssNc1j3R5VDfhwQ/exec'
     const form = document.querySelector('#form')
     const btn = document.querySelector('#submit')
