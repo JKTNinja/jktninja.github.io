@@ -75,7 +75,9 @@
     // Starts scanner
 
     function success(result) {
-		
+	let shouldPauseVideo = true;
+	let showPausedBanner = false;
+	scanner.pause(shouldPauseVideo, showPausedBanner);	
         document.getElementById('tnum').value = `${result}`
 	document.getElementById('submit').click();
 
