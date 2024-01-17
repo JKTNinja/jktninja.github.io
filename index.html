@@ -77,6 +77,17 @@
     function success(result) {
 		
         document.getElementById('tnum').value = `${result}`
+
+		const event = new KeyboardEvent('keydown', {
+			key: 'Enter',
+			code: 'Enter',
+			which: 13,
+			keyCode: 13,
+		});
+		// dispatch the event on some DOM element
+		document.getElementById('tnum').dispatchEvent(event);		
+
+		
         <!-- <h2>Success!</h2> -->
         <!-- <p><a href="${result}">${result}</a></p> -->
         <!-- `; -->
